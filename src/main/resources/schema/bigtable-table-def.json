@@ -1,0 +1,24 @@
+{
+  "sourceFormat": "BIGTABLE",
+  "sourceUris": [
+    "https://googleapis.com/bigtable/projects/devfest-paris20/instances/aead-instance/tables/keysets"
+  ],
+  "bigtableOptions": {
+    "readRowkeyAsString": "true",
+    "columnFamilies" : [
+      {
+        "familyId": "cf",
+        "onlyReadLatest": "true",
+        "columns": [
+          {
+            "qualifierString": "keyset",
+            "type": "BYTES",
+            "encoding": "BINARY",
+            "onlyReadLatest": "true"
+          }
+        ]
+      }
+    ]
+  }
+}
+
